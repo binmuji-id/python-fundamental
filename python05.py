@@ -3,6 +3,7 @@ penggunaan tipe data list
 '''
 
 from traceback import print_tb
+from turtle import clear
 
 
 daftar_buku = ['seven habits', 'how to influence people', 'first things first']
@@ -32,4 +33,16 @@ print ('tambahkan 1 buku baru')
 daftar_buku.append('4dx')
 for i in range (0, len(daftar_buku)):
     print (daftar_buku[i])
+
+print ('\nclear list')
+daftar_buku.clear()
+for i in range (0, len(daftar_buku)):
+    print (daftar_buku[i])
+
+print ('\nganti elemen pertama')
+daftar_buku = ['seven habits', 'how to influence people', 'first things first']
+daftar_buku[0] = 'one piece '
+for i in range (0, len(daftar_buku)):
+    print (daftar_buku[i])
+
 
