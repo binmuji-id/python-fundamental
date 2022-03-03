@@ -2,6 +2,9 @@
 penggunaan tipe data list
 '''
 
+from traceback import print_tb
+
+
 daftar_buku = ['seven habits', 'how to influence people', 'first things first']
 print ('\ntampilkan variable daftar_buku')
 print (daftar_buku)
@@ -23,4 +26,10 @@ print ('\ntampilkan dgn for in range, dimana tipe data berbeda')
 for i in range (0, len(daftar_buku)):
     print (daftar_buku[i])
 
+daftar_buku = ['seven habits', 'how to influence people', 'first things first']
+print ('\nmenambahkan data dengan append')
+print ('tambahkan 1 buku baru')
+daftar_buku.append('4dx')
+for i in range (0, len(daftar_buku)):
+    print (daftar_buku[i])
 
