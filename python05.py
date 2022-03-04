@@ -45,4 +45,21 @@ daftar_buku[0] = 'one piece '
 for i in range (0, len(daftar_buku)):
     print (daftar_buku[i])
 
+print ('\nambil elemen ke dua')
+buku = daftar_buku.pop(1)
+print (buku)
+for i in range (0, len(daftar_buku)):
+    print (daftar_buku[i])
+
+print ('\nPOP')
+daftar_buku = ['seven habits', 'how to influence people', 'first things first']
+daftar_buku.pop()
+for i in range (0, len(daftar_buku)):
+    print (daftar_buku[i])
+
+print ('\nPOP -1/-dkk')
+daftar_buku = ['seven habits', 'how to influence people', 'first things first']
+daftar_buku.pop(-2)
+for i in range (0, len(daftar_buku)):
+    print (daftar_buku[i])
 
