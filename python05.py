@@ -63,3 +63,22 @@ daftar_buku.pop(-2)
 for i in range (0, len(daftar_buku)):
     print (daftar_buku[i])
 
+print ('\nlist comprehension')
+print ('hapus elemen')
+daftar_buku = ['seven habits', 'how to influence people', 'first things first']
+del daftar_buku[0]
+for i in range (0, len(daftar_buku)):
+    print (daftar_buku[i])
+
+print ('\nhapus elemen comprehension 1')
+daftar_buku = ['seven habits', 'how to influence people', 'first things first']
+del daftar_buku[0:-2]
+for i in range (0, len(daftar_buku)):
+    print (daftar_buku[i])
+
+print ('\nhapus elemen comprehension 2')
+daftar_buku = ['seven habits', 'how to influence people', 'first things first', 'mangaku']
+del daftar_buku[0::2] 
+for i in range (0, len(daftar_buku)):
+    print (daftar_buku[i])
+
