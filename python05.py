@@ -82,3 +82,4 @@ del daftar_buku[0::2]
 for i in range (0, len(daftar_buku)):
     print (daftar_buku[i])
 
+#tes
