@@ -72,14 +72,20 @@ for i in range (0, len(daftar_buku)):
 
 print ('\nhapus elemen comprehension 1')
 daftar_buku = ['seven habits', 'how to influence people', 'first things first']
-del daftar_buku[0:-2]
+del daftar_buku[0:-2] #buang dari kanan
 for i in range (0, len(daftar_buku)):
     print (daftar_buku[i])
 
 print ('\nhapus elemen comprehension 2')
-daftar_buku = ['seven habits', 'how to influence people', 'first things first', 'mangaku']
-del daftar_buku[0::2] 
+daftar_buku = ['1 seven habits', '2 how to influence people', '3 first things first', '4 mangaku']
+del daftar_buku[0::2] #ambil ganjil, tampil genap
 for i in range (0, len(daftar_buku)):
     print (daftar_buku[i])
 
-#tes
+print ('\nhapus elemen comprehension 3')
+daftar_buku = ['1 seven habits', '2 how to influence people', '3 first things first', '4 mangaku']
+del daftar_buku[1::2] #ambil genap, tampil ganjil
+for i in range (0, len(daftar_buku)):
+    print (daftar_buku[i])
+
+
