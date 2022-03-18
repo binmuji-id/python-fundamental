@@ -15,4 +15,7 @@ users = {
 }
 print (users)
 print (users["id"]) #panggil dgn key
+print (users["name"])
+print (users["username"])
+print (users["email"])
 
