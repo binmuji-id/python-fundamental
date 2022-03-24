@@ -15,14 +15,27 @@ def ekstraksi_data():
     hasil = dict()
     hasil ['tanggal'] = '24 Maret 2022'
     hasil ['jam'] = '06:54:46 WIB'
-    print (hasil)
+    hasil ['magnitudo'] = 4.8
+    hasil ['kedalaman'] = '15 km'
+    hasil ['lokasi'] = {'ls': 0.73, 'bt': 133.60}
+    hasil ['titik gempa'] = 'Pusat gempa berada di laut 53 Km baratlaut Manokwari'
+    hasil ['keterangan'] = 'Dirasakan (Skala MMI): II-III Manokwari'
+
+
     return hasil
 
 def tampilkan_data (result):
-    pass
+    print ('\ngempa berdasarkan info bmkg')
+    print (f"Tanggal {result['tanggal']}")
+    print (f"Jam {result['jam']}")
+    print (f"Magnitudo {result['magnitudo']}")
+    print (f"Kedalaman {result['kedalaman']}")
+    print (f"Lokasi : LS={result['lokasi']['ls']}, BT={result['lokasi']['bt']}")
+    print (f"Titik Gempa {result['titik gempa']}")
+    print (f"Keterangan {result['keterangan']}")
 
 if __name__ == '__main__':
-    print ('aplikasi utama')
+    print ('\naplikasi utama')
     result = ekstraksi_data()
     tampilkan_data (result)
 
