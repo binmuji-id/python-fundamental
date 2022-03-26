@@ -1,7 +1,3 @@
-"""
-aplikasi deteksi gempa
-"""
-
 def ekstraksi_data():
     """
     Tanggal : 24 Maret 2022
@@ -33,10 +29,3 @@ def tampilkan_data (result):
     print (f"Lokasi : LS={result['lokasi']['ls']}, BT={result['lokasi']['bt']}")
     print (f"Titik Gempa {result['titik gempa']}")
     print (f"Keterangan {result['keterangan']}")
-
-if __name__ == '__main__':
-    print ('\naplikasi utama')
-    result = ekstraksi_data()
-    tampilkan_data (result)
-
-
