@@ -5,12 +5,12 @@ modularisasi dengan package
 """
 
 
-from gempaterkini import ekstraksi_data, tampilkan_data
+import gempaterkini
 
 
 if __name__ == '__main__':
     print ('\naplikasi utama')
-    result = ekstraksi_data()
-    tampilkan_data (result)
+    result = gempaterkini.ekstraksi_data()
+    gempaterkini.tampilkan_data (result)
 
 
