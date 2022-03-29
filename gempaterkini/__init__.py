@@ -12,28 +12,18 @@ def ekstraksi_data():
     Titik Gempa : Pusat gempa berada di laut 53 Km baratlaut Manokwari
     Keterangan : Dirasakan (Skala MMI): II-III Manokwari
     """
-    try : 
-        content = request.get('https://www.bmkg.go.id/')
-    except Exception:
-        return None
-    if content.status_code == 200:
-        soup = BeautifulSoup(content.text, 'html.parser')
-        title = soup.find ('title')
-        print (title.string)
-
-        
-        hasil = dict()
-        hasil ['tanggal'] = "24 Maret 2022"
-        hasil ['jam'] = '06:54:46 WIB'
-        hasil ['magnitudo'] = 4.8
-        hasil ['kedalaman'] = '15 km'
-        hasil ['lokasi'] = {'ls': 0.73, 'bt': 133.60}
-        hasil ['titik gempa'] = 'Pusat gempa berada di laut 53 Km baratlaut Manokwari'
-        hasil ['keterangan'] = 'Dirasakan (Skala MMI): II-III Manokwari'
-        return hasil
-    else:
-        return None
-
+              
+    hasil = dict()
+    hasil ['tanggal'] = "24 Maret 2022"
+    hasil ['jam'] = '06:54:46 WIB'
+    hasil ['magnitudo'] = 4.8
+    hasil ['kedalaman'] = '15 km'
+    hasil ['lokasi'] = {'ls': 0.73, 'bt': 133.60}
+    hasil ['titik gempa'] = 'Pusat gempa berada di laut 53 Km baratlaut Manokwari'
+    hasil ['keterangan'] = 'Dirasakan (Skala MMI): II-III Manokwari'
+    
+    return hasil
+    
 
 def tampilkan_data (result):
     print ('\ngempa berdasarkan info bmkg')
@@ -44,4 +34,4 @@ def tampilkan_data (result):
     print (f"Lokasi : LS={result['lokasi']['ls']}, BT={result['lokasi']['bt']}")
     print (f"Titik Gempa {result['titik gempa']}")
     print (f"Keterangan {result['keterangan']}")
-    
+
