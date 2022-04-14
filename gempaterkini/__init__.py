@@ -26,7 +26,7 @@ def ekstraksi_data():
     
 
 def tampilkan_data (result):
-    print ('\ngempa berdasarkan info bmkg')
+    print ('\nGempa berdasarkan info BMKG')
     print (f"Tanggal {result['tanggal']}")
     print (f"Jam {result['jam']}")
     print (f"Magnitudo {result['magnitudo']}")
@@ -35,3 +35,4 @@ def tampilkan_data (result):
     print (f"Titik Gempa {result['titik gempa']}")
     print (f"Keterangan {result['keterangan']}")
 
+print('ini tes package')
